@@ -1,6 +1,8 @@
-import '@/styles/globals.css'
-import type { AppProps } from 'next/app'
+import "@/styles/globals.css";
+import type { AppProps } from "next/app";
+import posthog from "../lib/posthog";
 
 export default function App({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+    if (posthog) posthog;
+    return <Component {...pageProps} />;
 }
