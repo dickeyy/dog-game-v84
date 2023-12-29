@@ -1,6 +1,5 @@
-import Image from "next/image";
 import { Comic_Neue } from "next/font/google";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Welcome from "@/comps/welcome";
 import Playing from "@/comps/playing";
 import Head from "next/head";
